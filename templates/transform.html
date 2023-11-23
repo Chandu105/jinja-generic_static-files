@@ -1,0 +1,82 @@
+
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>TRANSFORMS</title>
+	<style>
+		div
+		{
+			box-shadow: 0 0 10px black;
+			width:450px;
+			height:350px;
+			margin:100px auto;
+			position: relative;
+			overflow: hidden;
+			
+		}
+		div:hover
+		{
+			cursor:pointer;
+		}
+		.abc>img
+		{
+			width:100%;
+			height:100%;
+			filter:grayscale(100%);
+			transition: all 1s linear 0s;
+
+
+
+		}
+		div:hover>img
+		{
+			filter:grayscale(0%);
+		}
+		.abc>.mno
+		{
+			text-align: center;
+			color:purple;
+			background-color: rgba(0, 0, 0, 0.4);
+			position:absolute;
+			top:0px;
+			left:0px;
+			transform: translateX(100%);
+			margin:0px;
+			transition:all 1s linear 0s ;
+		}
+		.abc>.mno>h1
+		{
+			color: white;
+		}
+		div:hover>.mno>h1
+		{
+			color:white;
+		}
+		div:hover>.mno
+		{
+		transform:translateX(0%);
+	    }
+
+
+		
+       
+	</style>
+</head>
+<body>
+	<div class="abc">
+		<img src="{% static 'images/dhoni.jpg' %}">
+		<div class="mno">
+		
+			<h1>Dhoni-<h1>
+		        <p>Mahendra Singh Dhoni or as he is commonly known as MS Dhoni is a former Indian cricketer who represents India on the International stage. On the domestic level, Dhoni plays first-class cricket for Jharkhand.</p>
+		        
+		</div>
+		   	
+
+		
+
+	</div>
+	
+</body>
+</html>

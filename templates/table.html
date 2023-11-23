@@ -1,0 +1,45 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>tables</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+	<h1>Tables</h1>
+	<hr/>
+	<caption>DETAILS</caption>
+	<table border='1' style="border-collapse: collapse;">
+		<tr>
+			<td rowspan='8'>work out with david</td>
+			<th colspan='2'>Schedule</th>
+		</tr>
+		<tr>
+			<td rowspan='2'>January 8</td>
+			<td>step aerobics</td>
+		</tr>
+		<tr>
+			<td>pilates</td>
+		</tr>
+		<tr>
+			<td rowspan='2'>January 15</td>
+			<td>spinning</td>
+		</tr>
+		<tr>
+			<td>yoga</td>
+		</tr>
+		<tr>
+			<td rowspan='2'>January 22</td>
+			<td>kickboxing</td>
+		</tr>
+		<tr>
+			<td>Free Weihts</td>
+		</tr>
+		<tr>
+            <td colspan='2'>space is limited please sign up as soon as possible</td>
+		</tr>
+	</table>
+</body>
+</html>
